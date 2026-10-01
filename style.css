@@ -452,3 +452,505 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
     font-size: 12px;
 }
 
+
+
+
+/* =========================================================
+   AUMENTO DE FONTES SOLICITADO (CABEÇALHO, BOTÕES E HERO)
+   ========================================================= */
+
+/* 1. Links do Menu do Cabeçalho (Serviços, Sobre nós, etc.) */
+.main-nav a {
+    font-size: 15px !important; /* Era 12px */
+}
+
+/* 2. Botão "Solicitar atendimento" no Cabeçalho */
+.nav-cta {
+    font-size: 14px !important; /* Era 11px */
+    padding: 14px 22px !important; /* Ajuste leve para o botão acompanhar o texto */
+}
+
+/* 3. Botão "Solicitar uma proposta" */
+.hero-actions .btn {
+    font-size: 15px !important; /* Era 12px */
+    padding: 16px 24px !important;
+}
+
+/* 4. Botão / Link "Conheça nossos serviços" */
+.hero-actions .text-link {
+    font-size: 15px !important; /* Era 12px */
+}
+
+/* 5. Texto "Capacitação com propósito" */
+.hero-proof strong {
+    font-size: 15px !important; /* Era 12px */
+}
+
+/* 6. Subtexto abaixo de Capacitação com propósito */
+.hero-proof p span {
+    font-size: 13px !important; /* Era 11px */
+}
+
+/* 7. Card "Prevenção que faz a diferença" (sobre a foto) */
+.visual-label strong {
+    font-size: 15px !important; /* Era 12px */
+}
+
+.visual-label small {
+    font-size: 12px !important; /* Era 10px */
+}
+
+
+
+/* =========================================================
+   AUMENTO DE FONTES: FAIXA DE VALORES E STRIP DE DESTAQUES
+   ========================================================= */
+
+/* 1. Faixa Escura Superior (01 / PREVENIR, 02 / CAPACITAR, 03 / PRESERVAR) */
+.hero-bottom-line .container {
+    font-size: 12px !important; /* Era 9px */
+    letter-spacing: .18em !important;
+}
+
+/* 2. Números Azuis dos Destaques (01, 02, 03, 04) */
+.trust-number {
+    font-size: 13px !important; /* Era 10px */
+}
+
+/* 3. Textos do Topo dos Destaques (Treinamentos, Palestras, Documentação, Prevenção de riscos) */
+.trust-grid p {
+    font-size: 15px !important; /* Era 12px */
+}
+
+/* 4. Textos em Negrito dos Destaques (profissionais, que conscientizam, técnica, ocupacionais) */
+.trust-grid strong {
+    font-size: 16px !important; /* Era 13px */
+}
+
+
+/* =========================================================
+   AUMENTO DOS ÍCONES CIRCULARES NUMERADOS (01, 02, 03)
+   ========================================================= */
+
+/* Tamanho do círculo e fonte do número */
+.impact-icon {
+    width: 45px !important;       /* Era 35px */
+    height: 45px !important;      /* Era 35px */
+    font-size: 14px !important;   /* Era 10px */
+}
+
+/* Ajuste da coluna da esquerda para acomodar o círculo maior */
+.impact-point {
+    grid-template-columns: 55px 1fr !important; /* Era 45px 1fr */
+}
+
+
+/* =========================================================
+   AUMENTO DOS LINKS DOS CARDS DE SERVIÇOS (RODAPÉ DOS CARDS)
+   ========================================================= */
+
+/* Texto dos links (Quero capacitar minha equipe, etc.) */
+.card-link {
+    font-size: 15px !important;  /* Era 11px */
+    padding-top: 18px !important; /* Ligeiro ajuste de espaçamento */
+}
+
+/* Ícone da seta no canto direito */
+.card-link span {
+    font-size: 20px !important;  /* Era 17px */
+}
+
+
+/* =========================================================
+   AUMENTO DOS NÚMEROS DE ÍNDICE DOS CARDS (01, 02, 03)
+   ========================================================= */
+
+.service-index {
+    font-size: 13px !important; /* Era 9px */
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   AUMENTO DO BOTÃO "SOLICITAR ATENDIMENTO PELO WHATSAPP"
+   ========================================================= */
+
+/* Texto e tamanho do botão principal da CTA */
+.cta-section .btn-large {
+    font-size: 15px !important;  /* Era 11px */
+    padding: 18px 24px !important;
+}
+
+/* Ícone da seta/símbolo dentro do botão */
+.cta-section .btn-large span {
+    font-size: 20px !important;  /* Era 17px/18px */
+}
+
+
+/* =========================================================
+   AJUSTE E EXIBIÇÃO DA LOGO NO RODAPÉ
+   ========================================================= */
+
+/* Estilo para a imagem da logo do rodapé */
+.brand-footer img,
+.footer-logo-img {
+    display: block !important;
+    width: auto !important;
+    max-width: 140px !important; /* Ajuste o tamanho da logo como preferir */
+    height: auto !important;
+    max-height: 90px !important;
+    background: transparent !important; /* Remove fundo branco indesejado */
+    object-fit: contain !important;
+    mix-blend-mode: normal !important; /* Garante que as cores da imagem apareçam corretamente */
+}
+
+/* Alinhamento da logo com o texto ao lado */
+.brand-footer {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+
+/* =========================================================
+   AUMENTO DO TEXTO DA MARCA NO RODAPÉ
+   ========================================================= */
+
+/* Texto principal ("RS ASSESSORIA") */
+.brand-footer .brand-text strong {
+    font-size: 14px !important;  /* Era 13px/7px */
+    letter-spacing: .12em !important;
+}
+
+/* Subtexto ("	") */
+.brand-footer .brand-text small {
+    font-size: 8px !important;  /* Era 7px/8px */
+    letter-spacing: .08em !important;
+    color: #a8a9ab !important;
+    margin-top: 4px !important;
+}
+
+
+/* =========================================================
+   AUMENTO DA LOGO E TEXTO NO CABEÇALHO (HEADER)
+   ========================================================= */
+
+/* 1. Tamanho da Imagem da Logo */
+.brand img {
+    width: 75px !important;       /* Era 58px */
+    height: 60px !important;      /* Era 48px */
+    max-height: none !important;
+}
+
+/* 2. Texto Principal ("RS ASSESSORIA") */
+.brand-text strong {
+    font-size: 18px !important;   /* Era 15px */
+}
+
+/* 3. Subtexto ("SEGURANÇA • CAPACITAÇÃO • CONFIANÇA") */
+.brand-text small {
+    font-size: 11px !important;   /* Era 8px */
+    letter-spacing: .1em !important;
+    margin-top: 4px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   AJUSTE PROPORCIONAL DE FONTES (DESKTOP E MOBILE SEPARADOS)
+   ========================================================= */
+
+/* --- 1. APENAS PARA COMPUTADOR / TABLETS GRANDES (Telas maiores que 650px) --- */
+@media (min-width: 651px) {
+    /* Cabeçalho */
+    .brand img { width: 75px !important; height: 60px !important; }
+    .brand-text strong { font-size: 18px !important; }
+    .brand-text small { font-size: 11px !important; }
+    .main-nav a { font-size: 15px !important; }
+    .nav-cta { font-size: 14px !important; padding: 14px 22px !important; }
+
+    /* Hero e Banners */
+    .hero-actions .btn { font-size: 15px !important; padding: 16px 24px !important; }
+    .hero-actions .text-link { font-size: 15px !important; }
+    .hero-proof strong { font-size: 15px !important; }
+    .hero-proof p span { font-size: 13px !important; }
+    .visual-label strong { font-size: 15px !important; }
+    .visual-label small { font-size: 12px !important; }
+
+    /* Faixas de Destaque */
+    .hero-bottom-line .container { font-size: 12px !important; }
+    .trust-number { font-size: 13px !important; }
+    .trust-grid p { font-size: 15px !important; }
+    .trust-grid strong { font-size: 16px !important; }
+
+    /* Cards e Ícones */
+    .service-index { font-size: 14px !important; }
+    .impact-icon { width: 45px !important; height: 45px !important; font-size: 14px !important; }
+    .impact-point { grid-template-columns: 55px 1fr !important; }
+    .card-link { font-size: 15px !important; }
+    .card-link span { font-size: 20px !important; }
+    .cta-section .btn-large { font-size: 15px !important; padding: 18px 24px !important; }
+
+    /* Rodapé */
+    .brand-footer .brand-text strong { font-size: 18px !important; }
+    .brand-footer .brand-text small { font-size: 11px !important; }
+}
+
+
+/* --- 2. APENAS PARA CELULARES / MOBILE (Telas de até 650px) --- */
+@media (max-width: 650px) {
+    /* Cabeçalho Ajustado para Celular */
+    .brand img { width: 50px !important; height: 40px !important; }
+    .brand-text strong { font-size: 13px !important; }
+    .brand-text small { font-size: 8px !important; }
+    
+    /* Botões do Hero e CTA no Celular */
+    .hero-actions .btn, 
+    .cta-section .btn-large {
+        font-size: 13px !important;
+        padding: 12px 16px !important;
+        width: 100% !important; /* Faz o botão ocupar a largura ideal do celular */
+        text-align: center !important;
+    }
+    
+    .hero-actions .text-link { font-size: 13px !important; }
+    
+    /* Textos do Hero e Card Flutuante */
+    .hero-proof strong { font-size: 13px !important; }
+    .hero-proof p span { font-size: 11px !important; }
+    .visual-label strong { font-size: 13px !important; }
+    .visual-label small { font-size: 10px !important; }
+
+    /* Faixa de Destaques no Celular */
+    .hero-bottom-line .container { font-size: 10px !important; letter-spacing: .08em !important; }
+    .trust-grid p { font-size: 12px !important; }
+    .trust-grid strong { font-size: 13px !important; }
+
+    /* Ícones Circulares Numerados no Celular */
+    .impact-icon { width: 36px !important; height: 36px !important; font-size: 12px !important; }
+    .impact-point { grid-template-columns: 44px 1fr !important; }
+
+    /* Cards e Rodapé no Celular */
+    .service-index { font-size: 12px !important; }
+    .card-link { font-size: 13px !important; }
+    .brand-footer .brand-text strong { font-size: 14px !important; }
+    .brand-footer .brand-text small { font-size: 9px !important; }
+}
+
+
+
+
+
+/* =========================================================
+   ESTILIZAÇÃO DOS BOTÕES COM A COR OFICIAL DO WHATSAPP
+   ========================================================= */
+
+/* 1. Botão Flutuante do WhatsApp (Canto Inferior Direito) */
+.whatsapp-float {
+    background-color: #25D366 !important; /* Verde Oficial WhatsApp */
+    border-color: #1eaf53 !important;
+    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.4) !important;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E !important; /* Tom verde escuro ao passar o mouse */
+    transform: translateY(-4px) !important;
+}
+
+.whatsapp-float svg {
+    fill: #FFFFFF !important; /* Ícone em branco puro */
+}
+
+
+}
+
+.nav-cta:hover {
+    background-color: #128C7E !important;
+    color: #FFFFFF !important;
+    border-color: #128C7E !important;
+}
+
+
+
+.hero-actions .btn-white:hover,
+.hero-actions .btn-primary:hover {
+    background-color: #128C7E !important;
+    color: #FFFFFF !important;
+    border-color: #128C7E !important;
+}
+
+
+
+.cta-section .btn-large:hover,
+.btn-cta:hover {
+    background-color: #128C7E !important;
+    color: #FFFFFF !important;
+    border-color: #128C7E !important;
+}
+
+/* Garante que o texto e os ícones internos dos botões fiquem brancos */
+.btn-cta span,
+.cta-section .btn-large span,
+.nav-cta span,
+.hero-actions .btn span {
+    color: #FFFFFF !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   AUMENTO DE FONTES EXCLUSIVO PARA MOBILE (DEPOIMENTOS E FAQ)
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* --- 1. SEÇÃO DEPOIMENTOS --- */
+    
+    /* Texto da citação / comentário */
+    .testimonial blockquote {
+        font-size: 15px !important;       /* Era 13px */
+        line-height: 1.75 !important;
+    }
+
+    /* Nome da pessoa (ex: Paula, Tatiane) */
+    .reviewer strong {
+        font-size: 13px !important;       /* Era 11px */
+    }
+
+    /* Cargo / Função (ex: Participante, Gestora) */
+    .reviewer small {
+        font-size: 12px !important;       /* Era 10px */
+    }
+
+    /* Estrelas de avaliação */
+    .stars {
+        font-size: 15px !important;       /* Era 13px */
+    }
+
+
+    /* --- 2. SEÇÃO FAQ (PERGUNTAS FREQUENTES) --- */
+
+    /* Texto das perguntas */
+    .faq-list summary {
+        font-size: 15px !important;       /* Era 12px */
+        padding: 20px 0 !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Resposta ao abrir a pergunta */
+    .faq-list details p {
+        font-size: 14px !important;       /* Era 11px */
+        line-height: 1.8 !important;
+    }
+
+    /* Ícone de mais (+) no círculo */
+    .faq-plus {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 18px !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   AUMENTO DE FONTES DA FAIXA DE DESTAQUES (APENAS MOBILE)
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* 1. Faixa Escura Superior (01 / PREVENIR, 02 / CAPACITAR, 03 / PRESERVAR) */
+    .hero-bottom-line .container {
+        font-size: 11px !important;       /* Era 8px/10px */
+        letter-spacing: .12em !important;
+    }
+
+    /* 2. Números Azuis (01, 02, 03, 04) */
+    .trust-number {
+        font-size: 14px !important;       /* Era 10px */
+    }
+
+    /* 3. Texto Superior dos Cards (Treinamentos, Palestras, Documentação, Prevenção de riscos) */
+    .trust-grid p {
+        font-size: 14px !important;       /* Era 10px/12px */
+        line-height: 1.4 !important;
+    }
+
+    /* 4. Texto em Negrito dos Cards (profissionais, que conscientizam, técnica, ocupacionais) */
+    .trust-grid strong {
+        font-size: 15px !important;       /* Era 11px/13px */
+    }
+
+}
+
+
+
+
+/* =========================================================
+   CORREÇÃO DO ESPAÇO VAZIO NO BANNER HERO (APENAS MOBILE)
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* Reduz o padding e a altura mínima da secção Hero */
+    .hero-layout {
+        min-height: auto !important;
+        padding-top: 30px !important;
+        padding-bottom: 20px !important;
+        gap: 15px !important;
+    }
+
+    /* Reduz as margens da área de texto do Hero */
+    .hero-copy {
+        padding-bottom: 0 !important;
+    }
+
+    /* Reduz a margem superior do bloco "Capacitação com propósito" */
+    .hero-proof {
+        margin-top: 18px !important;
+        padding-top: 12px !important;
+    }
+
+    /* Ajusta/Reduz a altura da imagem e elimina o espaço em branco inferior */
+    .hero-visual {
+        height: 80px !important;  /* Reduz de 370px/400px para 280px */
+        margin: 10px 0 0 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* Ajusta o posicionamento do selo/carimbo azul RS para não esticar o banner */
+    .visual-stamp {
+        top: 10px !important;
+        right: 10px !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .visual-stamp span {
+        font-size: 20px !important;
+    }
+
+    /* Posiciona o cartão "Prevenção que faz a diferença" de forma compacta */
+    .visual-label {
+        bottom: 12px !important;
+        left: 0 !important;
+        padding: 8px 12px !important;
+    }
+}
