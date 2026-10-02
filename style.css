@@ -582,7 +582,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 }
 
 /* Ícone da seta/símbolo dentro do botão */
-.cta-section .btn-large span {
+ {
     font-size: 20px !important;  /* Era 17px/18px */
 }
 
@@ -953,4 +953,99 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
         left: 0 !important;
         padding: 8px 12px !important;
     }
+}
+
+
+
+
+/* =========================================================
+   OCULTAR TODAS AS SETAS (DESKTOP E MOBILE)
+   ========================================================= */
+
+/* 1. Oculta elementos  que contêm as setas dentro de botões e links */
+.btn span:not(.whatsapp-icon),
+.card-link span,
+.text-link span,
+.instagram-link span:last-child,
+.footer-contact-btn span:last-child,
+.card-top .service-icon {
+    display: none !important;
+}
+
+/* 2. Oculta setas no topo dos cards de serviços */
+.service-card .card-top span:last-child {
+    display: none !important;
+}
+
+/* 3. Remove margens ou espaçamentos desnecessários ao ocultar as setas */
+.btn, .text-link, .card-link {
+    gap: 0 !important;
+}
+
+
+
+
+/* =========================================================
+   REMOÇÃO COMPLETA DAS SETAS MOBILE (FALE COM UM ESPECIALISTA / WHATSAPP)
+   ========================================================= */
+
+/* 1. Oculta spans internos do botão mobile e do CTA superior */
+.mobile-cta span,
+.mobile-cta::after,
+a[class*="mobile"] span,
+a[class*="mobile"]::after {
+    display: none !important;
+    content: "" !important;
+}
+
+/* 2. Se a seta estiver escrita diretamente no texto HTML do botão */
+.mobile-cta, 
+.nav-cta {
+    font-size: 11px !important;
+    white-space: nowrap !important;
+}
+
+/* 3. Remove pseudoelementos de setas em qualquer botão no mobile */
+@media (max-width: 650px) {
+    a::after, 
+    button::after,
+    .btn::after {
+        content: "" !important;
+        display: none !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   OCULTAR SETA DA BARRA SUPERIOR (.TOPLINE / TOP-CONTACT)
+   ========================================================= */
+
+/* Oculta spans internos ou ícones no link da barra superior */
+.topline a span,
+.top-contact a span,
+.top-contact a::after {
+    display: none !important;
+    content: "" !important;
+}
+
+
+
+
+/* =========================================================
+   REMOVER SETA DO BOTÃO MOBILE-CTA (CABEÇALHO MOBILE)
+   ========================================================= */
+
+/* 1. Oculta qualquer span, elemento interno ou pseudoelemento no botão mobile */
+.mobile-cta span,
+.mobile-cta::after,
+.mobile-cta::before {
+    display: none !important;
+    content: "" !important;
+}
+
+/* 2. Remove o espaçamento extra reservado para a seta */
+.mobile-cta {
+    gap: 0 !important;
 }
