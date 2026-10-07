@@ -1291,3 +1291,36 @@ a.footer-contact-btn {
         font-size: 13px !important;
     }
 }
+
+
+
+
+/* =========================================================
+   CENTRALIZAÇÃO DO "VOLTAR AO TOPO" (APENAS MOBILE)
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* Alinha a linha/bloco inferior do rodapé no meio */
+    .footer-bottom,
+    .footer-bottom .container,
+    .back-to-top-wrap {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    /* Centraliza o botão "Voltar ao topo" */
+    a.back-to-top,
+    .back-to-top,
+    a[href="#top"] {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 12px auto 0 auto !important;
+        text-align: center !important;
+        width: auto !important;
+    }
+}
