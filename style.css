@@ -466,7 +466,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 
 /* 2. Botão "Solicitar atendimento" no Cabeçalho */
 .nav-cta {
-    font-size: 14px !important; /* Era 11px */
+    font-size: 16px !important; /* Era 11px */
     padding: 14px 22px !important; /* Ajuste leve para o botão acompanhar o texto */
 }
 
@@ -581,7 +581,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
     padding: 18px 24px !important;
 }
 
-/* Ícone da seta/símbolo dentro do botão */
+/
  {
     font-size: 20px !important;  /* Era 17px/18px */
 }
@@ -616,9 +616,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
    AUMENTO DO TEXTO DA MARCA NO RODAPÉ
    ========================================================= */
 
-/* Texto principal ("RS ASSESSORIA") */
+/* Texto principal ("ASSESSORIA") */
 .brand-footer .brand-text strong {
-    font-size: 14px !important;  /* Era 13px/7px */
+    font-size: 16px !important;  /* Era 13px/7px */
     letter-spacing: .12em !important;
 }
 
@@ -637,19 +637,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid rgb
 
 /* 1. Tamanho da Imagem da Logo */
 .brand img {
-    width: 75px !important;       /* Era 58px */
-    height: 60px !important;      /* Era 48px */
+    width: 300px !important;       /* Era 58px */
+    height: 200px !important;      /* Era 48px */
     max-height: none !important;
 }
 
-/* 2. Texto Principal ("RS ASSESSORIA") */
+/* 2. Texto Principal ("ASSESSORIA") */
 .brand-text strong {
-    font-size: 18px !important;   /* Era 15px */
+    font-size: 22px !important;   /* Era 15px */
 }
 
 /* 3. Subtexto ("SEGURANÇA • CAPACITAÇÃO • CONFIANÇA") */
 .brand-text small {
-    font-size: 11px !important;   /* Era 8px */
+    font-size: 12px !important;   /* Era 8px */
     letter-spacing: .1em !important;
     margin-top: 4px !important;
 }
@@ -1048,4 +1048,246 @@ a[class*="mobile"]::after {
 /* 2. Remove o espaçamento extra reservado para a seta */
 .mobile-cta {
     gap: 0 !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   AUMENTO DO ÍCONE DA LOGO NO CABEÇALHO (HEADER)
+   ========================================================= */
+
+/* 1. Versão para Computador / Desktop */
+@media (min-width: 1200px) {
+    .brand img {
+        width: 80px !important;        /* Era 75px */
+        height: auto !important;
+        max-height: 200px !important;
+        object-fit: contain !important;
+    }
+
+    /* Aumenta a altura do container da navegação para acomodar a logo maior */
+    .nav-wrap {
+        height: 80px !important;       /* Era 88px */
+    }
+}
+
+/* 2. Versão para Celular / Mobile */
+@media (max-width: 650px) {
+    .brand img {
+        width: 70px !important;        /* Era 50px */
+        height: auto !important;
+        max-height: 70px !important;
+        object-fit: contain !important;
+    }
+
+    .nav-wrap {
+        height: 90px !important;       /* Era 72px */
+    }
+}
+
+
+
+
+/* =========================================================
+   CORREÇÃO DEFINITIVA DO BOTÃO CTA (LINHA ÚNICA E CENTRALIZADO)
+   ========================================================= */
+
+/* 1. Zera qualquer margem/preenchimento e força o botão a centralizar */
+.cta-section .btn-large,
+.cta-section .btn,
+.cta-section a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important; /* IMPEDE A QUEBRA DE LINHA */
+    width: auto !important;
+    min-width: 320px !important;
+    padding: 16px 32px !important;
+    margin: 0 auto !important;
+}
+
+/* 2. Remove qualquer elemento invisível ou antigo que esteja empurrando o texto */
+.cta-section .btn-large > *:not(span:first-child) {
+    display: none !important;
+}
+
+/* 3. Garante que o texto fique em linha única e perfeitamente no meio */
+.cta-section .btn-large span {
+    display: inline-block !important;
+    width: auto !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+
+
+/* =========================================================
+   CENTRALIZAÇÃO EXCLUSIVA DO BOTÃO CTA NO MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* Garante que o texto da seção continue alinhado à esquerda */
+    .cta-section .cta-content,
+    .cta-section .container {
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+
+    /* Centraliza APENAS o botão dentro do container */
+    .cta-section .btn-large,
+    .cta-section .btn,
+    .cta-section a {
+        display: flex !important;
+        justify-content: center !important;  /* Texto no meio do botão */
+        align-items: center !important;
+        margin-top: 28px !important;          /* Afasta do texto acima */
+        margin-left: auto !important;        /* Centraliza a caixa do botão no container */
+        margin-right: auto !important;       /* Centraliza a caixa do botão no container */
+        width: 100% !important;
+        max-width: 320px !important;          /* Mantém o botão compacto */
+        box-sizing: border-box !important;
+    }
+
+    /* Texto do botão em linha única */
+    .cta-section .btn-large span {
+        font-size: 13px !important;
+        white-space: nowrap !important;
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   AUMENTO DOS TEXTOS DA LOGO NO CABEÇALHO (APENAS MOBILE)
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* Nome principal da marca ("RS ASSESSORIA") */
+    .brand-text strong {
+        font-size: 15px !important;  /* Era 13px */
+        letter-spacing: .08em !important;
+    }
+
+    /* Subtexto / Slogan ("SEGURANÇA • CAPACITAÇÃO • CONFIANÇA") */
+    .brand-text small {
+        font-size: 9.5px !important; /* Era 8px */
+        letter-spacing: .06em !important;
+        margin-top: 2px !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   REDUÇÃO DE MARGENS E PADDING DO CABEÇALHO (APENAS MOBILE)
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* Reduz a altura e o preenchimento da barra do cabeçalho */
+    header,
+    .site-header,
+    .nav-wrap {
+        height: auto !important;
+        min-height: unset !important;
+        padding-top: 16px !important;    /* Reduz o espaço superior */
+        padding-bottom: 16px !important; /* Reduz o espaço inferior */
+    }
+
+    /* Ajusta o container interno para alinhar os elementos verticalmente */
+    .nav-wrap .container,
+    header .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* Ajusta o padding interno do botão para acompanhar o cabeçalho mais fino */
+    .mobile-cta,
+    .nav-cta {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   CENTRALIZAÇÃO DO BOTÃO "ENTRAR EM CONTATO" NO RODAPÉ
+   ========================================================= */
+
+.footer-contact-btn,
+.site-footer .btn,
+.footer-column .btn,
+a.footer-contact-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important; /* Centraliza o texto na horizontal */
+    text-align: center !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Garante que qualquer texto ou span interno fique centralizado */
+.footer-contact-btn span,
+.site-footer .btn span {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+
+
+/* =========================================================
+   AUMENTO DO TEXTO DO BOTÃO NO CABEÇALHO (.NAV-CTA)
+   ========================================================= */
+
+/* 1. Para Computador / Desktop */
+@media (min-width: 651px) {
+    .nav-cta,
+    .nav-wrap .btn,
+    .site-header .nav-cta {
+        font-size: 15px !important;       /* Era ~14px */
+        padding: 14px 20px !important;    /* Ajusta o preenchimento para proporcionalizar */
+        font-weight: 600 !important;
+    }
+
+    .nav-cta span {
+        font-size: 16px !important;
+    }
+}
+
+/* 2. Para Celular / Mobile */
+@media (max-width: 650px) {
+    .nav-cta,
+    .nav-wrap .btn,
+    .site-header .nav-cta,
+    .mobile-cta {
+        font-size: 13px !important;       /* Era ~11px */
+        padding: 10px 16px !important;
+        font-weight: 600 !important;
+    }
+
+    .nav-cta span,
+    .mobile-cta span {
+        font-size: 13px !important;
+    }
 }
